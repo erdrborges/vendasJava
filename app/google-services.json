@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "446847685728",
+    "firebase_url": "https://vendasjava.firebaseio.com",
+    "project_id": "vendasjava",
+    "storage_bucket": "vendasjava.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446847685728:android:d54851575ad97a50",
+        "android_client_info": {
+          "package_name": "com.example.vendasjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446847685728-60inb37tgp0b3g9ep9rh8p3jdbn1mulh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbq-KicrcoTe7Sr_UNNuUCU588S9d91tQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446847685728-60inb37tgp0b3g9ep9rh8p3jdbn1mulh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

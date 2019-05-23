@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">VendasJava</string>
+    <string name="hint_senha">senha</string>
+    <string name="hint_email">Email</string>
+    <string name="contentDescription">Logo da empresa</string>
+    <string name="bt_sigin">Sing In</string>
+    <string name="bt_sigup">Sing Up</string>
+
+    <string name="password_fail">Senha não cadastrada.</string>
+    <string name="email_fail">Email não cadastrado.</string>
+    <string name="email_already">Email já cadastrado.</string>
+    <string name="signup_fail">Sign UP falhou. A internet está conectada?</string>
+
+    <string name="hint_estoque">Estoque</string>
+    <string name="hint_nome">nome</string>
+    <string name="content_description_foto_produto">foto do produto</string>
+    <string name="hint_valor">Valor</string>
+
+    <string name="action_settings">configurações</string>
+    <string name="menu_nav_carrinho">Carrinho</string>
+    <string name="menu_nav_lista_de_clientes">clientes</string>
+    <string name="menu_nav_produto_admin">Produto</string>
+    <string name="menu_nav_cliente_admin">Cliente</string>
+    <string name="menu_nav_sobre">sobre</string>
+    <string name="menu_nav_sair">sair</string>
+    <string name="menu_vender">Vender</string>
+    <string name="menu_cancelar">Cancelar</string>
+    <string name="menu_pesquisar">Pesquisar</string>
+    <string name="title_menu_lercodigodebarras">Ler código de barras</string>
+    <string name="hint_nome_searchview">nome</string>
+    <string name="hint_dados_basicos_do_cliente">Dados básicos do cliente</string>
+    <string name="hint_nome_do_cliente">Nome do cliente</string>
+    <string name="content_description_foto_do_cliente">foto do cliente</string>
+    <string name="foto_do_produto">foto do produto</string>
+    <string name="hint_valor_produto">R$: 00,00</string>
+    <string name="hint_nome_produto">Nome Produto</string>
+    <string name="hint_estoque_produto">Estoque: 00</string>
+    <string name="bt_vender">Vender</string>
+    <string name="hint_descricao_produto">Descrição do Produto</string>
+    <string name="hint_quantos">Quantos?</string>
+    <string name="hint_vendedor">vendedor@email.com</string>
+    <string name="label_estoque">Estoque:</string>
+    <string name="title_selecionar_cliente">Confirma este cliente?</string>
+    <string name="message_nome_cliente">nome</string>
+    <string name="message_cpf_cliente">CPF:</string>
+    <string name="alertdialog_sim">Sim</string>
+    <string name="alertdialog_nao">Não</string>
+    <string name="toast_cliente_selecionado">Cliente selecionado.</string>
+    <string name="snack_operacao_cancelada">Operação cancelada.</string>
+    <string name="toast_adicionado_ao_carrinho">Adicionado ao carrinho.</string>
+    <!-- Barcode -->
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This aication cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="hint_sobrenome_cliente">hint_sobrenome_cliente</string>
+    <string name="hint_nome_cliente">hint_nome_cliente</string>
+    <string name="hint_cpf_cliente">hint_cpf_cliente</string>
+    <string name="sign_in">sign_in</string>
+    <string name="sign_up">sign_in</string>
+    <string name="senha">senha</string>
+    <string name="email">senha</string>
+    <string name="todo">todo</string>
+    <string name="Sobrenome_cliente">Sobrenome Cliente</string>
+    <string name="Nome_cliente">Nome Cliente</string>
+    <string name="CPF_cliente">CPF Cliente</string>
+    <string name="title_activity_navig">Navig</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="r_00_00">R$ 00.00</string>
+    <string name="nome_e_sobrenome_do_cliente">Nome e sobrenome do cliente</string>
+</resources>
