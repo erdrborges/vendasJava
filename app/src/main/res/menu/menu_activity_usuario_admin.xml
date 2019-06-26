@@ -8,8 +8,7 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/menuitem_list_users"
-        android:icon="@drawable/ic_barcode_24"
-        android:title="@string/title_menu_lercodigodebarras"
+        android:icon="@drawable/ic_list_action"
+        android:title="@string/lista_de_users"
         app:showAsAction="always" />
-
 </menu>

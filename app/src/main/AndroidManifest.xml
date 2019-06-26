@@ -14,29 +14,51 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".activity.MainActivity" />
-
+        <activity android:name=".activity.UsuarioAdmUpdateActivity"></activity>
+        <activity
+            android:name=".activity.PedidosActivity"
+            android:label="Pedidos"
+            android:parentActivityName=".activity.ClienteAdminActivity" />
+        <activity
+            android:name=".activity.UsuarioAdminActivity"
+            android:label="Usuários - Adm"
+            android:parentActivityName=".activity.ProdutosActivity" />
+        <activity
+            android:name=".activity.ClienteAdminActivity"
+            android:label="Clientes - Adm"
+            android:parentActivityName=".activity.ProdutosActivity" />
+        <activity
+            android:name=".activity.ProdutoAdminActivity"
+            android:label="Produtos - Adm"
+            android:parentActivityName=".activity.ProdutosActivity" />
+        <activity
+            android:name=".activity.SobreActivity"
+            android:label="Sobre o Vendas Java"
+            android:parentActivityName=".activity.ProdutosActivity" />
         <activity
             android:name=".activity.ClientesActivity"
-            android:label="Clientes" />
-
+            android:label="Clientes"
+            android:parentActivityName=".activity.ProdutoDetalheActivity" />
         <activity
             android:name=".activity.CarrinhoActivity"
-            android:label="Carrinho" />
-
+            android:label="Carrinho"
+            android:parentActivityName=".activity.ProdutosActivity" />
         <activity
             android:name=".activity.ProdutoDetalheActivity"
-            android:label="Detalhe do Produto" />
-
+            android:label="Detalhe do Produto"
+            android:parentActivityName=".activity.CarrinhoActivity" />
         <activity
             android:name=".activity.ProdutosActivity"
+            android:label="Produtos"
+            android:parentActivityName=".activity.ProdutoDetalheActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
+        <activity
+            android:name=".activity.UsuariosActivity"
+            android:label="Usuários Cadastrados"
+            android:parentActivityName=".activity.UsuarioAdminActivity" />
         <activity
             android:name=".activity.LoginActivity"
-            android:label="Vendas Java" >
-
+            android:label="Vendas Java">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -44,9 +66,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".barcode.BarcodeCaptureActivity"
-            android:label="Leitor de Código" />
+            android:label="Leitor de BarCode" />
     </application>
+
 </manifest>

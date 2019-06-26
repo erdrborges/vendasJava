@@ -9,15 +9,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="201dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="80dp"
         android:contentDescription="@string/contentDescription"
-        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -30,13 +30,15 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/hint_email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/etSenha"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:importantForAutofill="no" />
+        tools:targetApi="o" />
 
     <EditText
         android:id="@+id/etSenha"
@@ -55,35 +57,70 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail"
-        android:importantForAutofill="no" />
+        android:importantForAutofill="no" tools:targetApi="o" />
 
     <Button
         android:id="@+id/bt_sigin"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@color/colorAccent"
+        android:layout_below="@+id/etSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="188dp"
+        android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="@string/bt_sigin"
-        android:textColor="@color/font_white"
+        android:text="@string/bt_signin"
+        android:textColor="@color/font_color"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_sigup"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etSenha" />
 
     <Button
-        android:id="@+id/bt_sigup"
+        android:id="@+id/bt_signup"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/etSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="32dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/bt_sigup"
-        android:textColor="@color/font_white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="104dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/bt_signup"
+        android:textColor="#863030"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_sigin" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_sigin"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/tv_esqueceu_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_sigin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="10dp"
+        android:text="@string/tv_esqueceu_senha"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_signup" />
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.vendasjava.activity;
+package com.example.venimdasjava.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

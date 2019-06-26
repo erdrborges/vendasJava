@@ -57,7 +57,6 @@ public class ProdutosAdapter extends ArrayAdapter<Produto> {
             //carrega a imagem do serviço Storage aqui
         }
 
-
         return convertView;
     }
 }

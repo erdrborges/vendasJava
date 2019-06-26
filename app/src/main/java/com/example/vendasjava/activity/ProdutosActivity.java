@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
@@ -42,6 +43,7 @@ public class ProdutosActivity extends AppCompatActivity implements NavigationVie
     private static final String TAG = "produtosActivity";
     private static final int RC_BARCODE_CAPTURE = 1;
     private ListView lvProdutos;
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +63,18 @@ public class ProdutosActivity extends AppCompatActivity implements NavigationVie
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        lvProdutos = findViewById(R.id.lv_produtos);
+        View headerMain = navigationView.getHeaderView(0);
+        TextView tvUsuarioEmail = headerMain.findViewById(R.id.tvEmailUsuarioAdapter);
+        TextView tvUsuarioNome = headerMain.findViewById(R.id.tvNomeUsuario);
+
+        tvUsuarioEmail.setText(AppSetup.user.getEmail());
+        tvUsuarioNome.setText(AppSetup.user.getNome());
+
+        if (AppSetup.user.getFuncao().equals("Administrador")){
+            navigationView.getMenu().findItem(R.id.admGroup).setVisible(true);
+        }
+
+        lvProdutos = findViewById(R.id.lv_usuarios);
         lvProdutos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -130,7 +143,7 @@ public class ProdutosActivity extends AppCompatActivity implements NavigationVie
             public boolean onQueryTextChange(String newText) {
                 List<Produto> produtosTemp = new ArrayList<>();
                 for(Produto produto : AppSetup.produtos){
-                    if(produto.getNome().contains(newText)){
+                    if(produto.getNome().toLowerCase().contains(newText.toLowerCase())){
                         produtosTemp.add(produto);
                     }
                 }
@@ -210,21 +223,24 @@ public class ProdutosActivity extends AppCompatActivity implements NavigationVie
                 break;
             }
             case R.id.nav_produto_adminstracao:{
-
+                startActivity(new Intent(ProdutosActivity.this, ProdutoAdminActivity.class));
                 break;
             }
             case R.id.nav_cliente_administracao:{
-
+                startActivity(new Intent(ProdutosActivity.this, ClienteAdminActivity.class));
+                break;
+            }
+            case R.id.nav_usuario_administracao:{
+                startActivity(new Intent(ProdutosActivity.this, UsuarioAdminActivity.class));
                 break;
             }
             case R.id.nav_sobre:{
-
+                startActivity(new Intent(ProdutosActivity.this, SobreActivity.class));
                 break;
             }
             case R.id.nav_sair:{
                 FirebaseAuth.getInstance().signOut();
                 finish();
-//                startActivity(new Intent(ProdutosActivity.this, LoginActivity.class));
                 break;
             }
 

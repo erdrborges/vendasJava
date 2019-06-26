@@ -9,7 +9,6 @@
     <item
         android:id="@+id/menuitem_list_users"
         android:icon="@drawable/ic_barcode_24"
-        android:title="@string/title_menu_lercodigodebarras"
-        app:showAsAction="always" />
-
+        app:showAsAction="always"
+        android:title="@string/title_menu_lercodigodebarras" />
 </menu>

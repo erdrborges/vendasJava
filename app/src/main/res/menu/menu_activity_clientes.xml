@@ -13,5 +13,4 @@
         android:icon="@drawable/ic_barcode_24"
         app:showAsAction="always"
         android:title="@string/title_menu_lercodigodebarras" />
-
 </menu>

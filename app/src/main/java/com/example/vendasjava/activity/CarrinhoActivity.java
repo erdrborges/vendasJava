@@ -103,35 +103,6 @@ public class CarrinhoActivity extends AppCompatActivity {
         return true;
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()){
-//            case R.id.menuitem_salvar:
-//                if(AppSetup.carrinho.isEmpty()){
-//                    Toast.makeText(this, "Carrinho vazio.", Toast.LENGTH_SHORT).show();
-//                }else{
-//                    adSalvarPedido("Processando...", "\nTotal = " + NumberFormat.getCurrencyInstance().format(valorTotal) + ". Confirmar?");
-//                }
-//
-//                //Toast.makeText(this, "Salvar no banco", Toast.LENGTH_SHORT).show();
-//
-//                break;
-//
-//            case R.id.menuitem_cancelar:
-//                if(AppSetup.carrinho.isEmpty()){
-//                    adCancelarPedido("Cancelamento de Pedido", "Você realmente deseja cancelar o pedido?");
-//                }else{
-//                    Toast.makeText(this, "O carrinho está vazio!", Toast.LENGTH_SHORT).show();
-//                }
-//
-//                //Toast.makeText(this, "Excluir carrinho", Toast.LENGTH_SHORT).show();
-//
-//                break;
-//        }
-//
-//        return true;
-//    }
-
     private void editaItem(final int position, String titulo, String mensagem){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 

@@ -4,7 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item android:title="Vendas">
+        <item android:title="@string/tv_vendas_group">
             <menu>
                 <item
                     android:id="@+id/nav_carrinho"
@@ -18,7 +18,10 @@
         </item>
     </group>
     <group android:checkableBehavior="single">
-        <item android:title="Administração">
+        <item
+            android:id="@+id/admGroup"
+            android:title="@string/tv_adm_group"
+            android:visible="false">
             <menu>
                 <item
                     android:id="@+id/nav_produto_adminstracao"
@@ -28,11 +31,15 @@
                     android:id="@+id/nav_cliente_administracao"
                     android:icon="@drawable/ic_contacts_48"
                     android:title="@string/menu_nav_cliente_admin" />
+                <item
+                    android:id="@+id/nav_usuario_administracao"
+                    android:icon="@drawable/ic_group_add_black_24dp"
+                    android:title="@string/menu_nav_usuario_admin" />
             </menu>
         </item>
     </group>
     <group android:checkableBehavior="single">
-        <item android:title="App">
+        <item android:title="@string/tv_app_group">
             <menu>
                 <item
                     android:id="@+id/nav_sobre"
@@ -47,4 +54,3 @@
     </group>
 
 </menu>
-

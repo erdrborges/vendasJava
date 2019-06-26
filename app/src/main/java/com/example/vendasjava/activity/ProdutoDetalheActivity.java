@@ -44,7 +44,7 @@ public class ProdutoDetalheActivity extends AppCompatActivity {
         setContentView(R.layout.activity_produto_detalhe);
 
         //mapeia os componentes da UI
-        tvNome = findViewById(R.id.tvNomeProduto);
+        tvNome = findViewById(R.id.tvNomeProdutoAdapter);
         tvDescricao = findViewById(R.id.tvDerscricaoProduto);
         tvValor = findViewById(R.id.tvValorProduto);
         tvEstoque = findViewById(R.id.tvQuantidadeProduto);
@@ -120,7 +120,7 @@ public class ProdutoDetalheActivity extends AppCompatActivity {
 
                             Toast.makeText(ProdutoDetalheActivity.this, "Item adicionado ao carrinho", Toast.LENGTH_SHORT).show();
 
-//                            startActivity(new Intent(ProdutoDetalheActivity.this, CarrinhoActivity.class));
+                            //startActivity(new Intent(ProdutoDetalheActivity.this, CarrinhoActivity.class));
 
                             startActivity(new Intent(ProdutoDetalheActivity.this, CarrinhoActivity.class));
                             finish();
